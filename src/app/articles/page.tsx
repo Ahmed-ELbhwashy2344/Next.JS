@@ -44,10 +44,10 @@ export default async function ArticlesPage() {
   const data: Article[] = await response.json();
 
   return (
-    <div className="container fade-in mx-auto flex flex-wrap items-center justify-center">
-      {data.map((result, index) => (
-        <Articles article={result} key={index} />
-      ))}
-    </div>
+    <div className="container fade-in mx-auto px-4 py-8 flex flex-wrap justify-start items-stretch">
+    {data.map((result, index) => (
+      <Articles article={result} key={index} />
+    ))}
+  </div>
   );
 }
