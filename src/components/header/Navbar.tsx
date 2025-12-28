@@ -15,7 +15,7 @@ export default function Navbar() {
     <div className="relative">
       <nav className="flex justify-between items-center p-4">
         <div
-          className={`md:hidden text-5xl cursor-pointer z-20 ${
+          className={`md:hidden text-5xl cursor-pointer z-40 ${
             isMenuOpen ? "ml-36" : ""
           }`}
           onClick={toggleMenu}
@@ -68,7 +68,7 @@ export default function Navbar() {
       </nav>
 
       <div
-        className={`fixed top-0 left-0 w-[200px] h-[300px] bg-amber-50 shadow-xl z-10 transition-transform duration-300 transform md:hidden ${
+        className={`fixed top-0 left-0 w-[200px] h-[300px] bg-amber-50 shadow-xl z-40 transition-transform duration-300 transform md:hidden ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
