@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { TiArrowRightThick } from "react-icons/ti";
-import photo from "../../../public/post-3.jpg";
 export default function () {
   return (
     <div className=" container mx-auto p-12 flex flex-wrap items-center justify-around ">
@@ -32,7 +31,7 @@ export default function () {
       </div>
       <div className="md:w-1/2 md:mt-0 mt-5 w-full">
         <Image
-          src={photo}
+          src="/post-3.jpg"
           alt=""
           width={500}
           height={500}
