@@ -101,6 +101,13 @@ export default function Navbar() {
           >
             Articles
           </Link>
+          <Link
+            onClick={toggleMenu}
+            className="hover:text-violet-600 transition"
+              href="/test"
+            >
+              Test page
+          </Link>
         </ul>
       </div>
     </div>
